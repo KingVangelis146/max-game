@@ -1,19 +1,22 @@
 fileFormatVersion: 2
-guid: 7610183c9ad6c1b469206a73a988621f
+guid: c4d9c7d98ae4e234785ba063a1f30690
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 9174553063086864377
-    second: New Fang Walking Left Before Fully Extended_0
+      213: -4663651587598360249
+    second: New Fang Before Still Right_0
   - first:
-      213: -3042646366001222032
-    second: New Fang Walking Left Before Fully Extended_1
+      213: 1694973617400117785
+    second: New Fang Before Still Right_1
   - first:
-      213: 7195155359521799471
-    second: New Fang Walking Left Before Fully Extended_2
+      213: -5393526698665865775
+    second: New Fang Before Still Right_2
   - first:
-      213: -4091819997070066065
-    second: New Fang Walking Left Before Fully Extended_3
+      213: 5448193717714521061
+    second: New Fang Before Still Right_3
+  - first:
+      213: 1135842886471016663
+    second: New Fang Before Still Right_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -109,13 +112,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: New Fang Walking Left Before Fully Extended_0
+      name: New Fang Before Still Right_0
       rect:
         serializedVersion: 2
-        x: 244
-        y: 57
-        width: 1910
-        height: 2936
+        x: 50
+        y: 54
+        width: 1674
+        height: 2717
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,20 +127,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9f7b34ae66f825f70800000000000000
-      internalID: 9174553063086864377
+      spriteID: 74163051791674fb0800000000000000
+      internalID: -4663651587598360249
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: New Fang Walking Left Before Fully Extended_1
+      name: New Fang Before Still Right_1
       rect:
         serializedVersion: 2
-        x: 1234
-        y: 2988
-        width: 15
-        height: 12
+        x: 1697
+        y: 1985
+        width: 43
+        height: 10
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -146,20 +149,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 07e2d51304956c5d0800000000000000
-      internalID: -3042646366001222032
+      spriteID: 91afac05681c58710800000000000000
+      internalID: 1694973617400117785
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: New Fang Walking Left Before Fully Extended_2
+      name: New Fang Before Still Right_2
       rect:
         serializedVersion: 2
-        x: 2242
-        y: 2811
-        width: 15
-        height: 62
+        x: 18
+        y: 1358
+        width: 7
+        height: 7
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -168,20 +171,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f2d7b0c8da35ad360800000000000000
-      internalID: 7195155359521799471
+      spriteID: 1dd8f6f2b085625b0800000000000000
+      internalID: -5393526698665865775
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: New Fang Walking Left Before Fully Extended_3
+      name: New Fang Before Still Right_3
       rect:
         serializedVersion: 2
-        x: 2238
-        y: 2777
-        width: 9
-        height: 19
+        x: 25
+        y: 1357
+        width: 6
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -190,8 +193,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f6e7ccd546fe637c0800000000000000
-      internalID: -4091819997070066065
+      spriteID: 5eb83eb025fdb9b40800000000000000
+      internalID: 5448193717714521061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New Fang Before Still Right_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1333
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d062c8561353cf00800000000000000
+      internalID: 1135842886471016663
       vertices: []
       indices: 
       edges: []
@@ -210,10 +235,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      New Fang Walking Left Before Fully Extended_0: 9174553063086864377
-      New Fang Walking Left Before Fully Extended_1: -3042646366001222032
-      New Fang Walking Left Before Fully Extended_2: 7195155359521799471
-      New Fang Walking Left Before Fully Extended_3: -4091819997070066065
+      New Fang Before Still Right_0: -4663651587598360249
+      New Fang Before Still Right_1: 1694973617400117785
+      New Fang Before Still Right_2: -5393526698665865775
+      New Fang Before Still Right_3: 5448193717714521061
+      New Fang Before Still Right_4: 1135842886471016663
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

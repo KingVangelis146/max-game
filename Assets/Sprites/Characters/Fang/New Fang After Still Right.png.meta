@@ -1,16 +1,19 @@
 fileFormatVersion: 2
-guid: 5ff76e36707d93641b29e79701ba3a42
+guid: 9ccf80469cf809c4ea0aacd55de0c9d0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 804653458844285517
-    second: New Fang Walking Left After Stil_0
+      213: 7123356091125123473
+    second: New Fang After Still Right_0
   - first:
-      213: 2461321513197794916
-    second: New Fang Walking Left After Stil_1
+      213: -5813126235159074895
+    second: New Fang After Still Right_1
   - first:
-      213: 1868777213109568139
-    second: New Fang Walking Left After Stil_2
+      213: -2131747524720515280
+    second: New Fang After Still Right_2
+  - first:
+      213: -3161917728015854656
+    second: New Fang After Still Right_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -52,7 +55,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -106,12 +109,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: New Fang Walking Left After Stil_0
+      name: New Fang After Still Right_0
       rect:
         serializedVersion: 2
-        x: 641
-        y: 1541
-        width: 8
+        x: 18
+        y: 1432
+        width: 7
         height: 7
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -121,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d4af3bdbe04ba2b00800000000000000
-      internalID: 804653458844285517
+      spriteID: 199c02caf9e3bd260800000000000000
+      internalID: 7123356091125123473
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: New Fang Walking Left After Stil_1
+      name: New Fang After Still Right_1
       rect:
         serializedVersion: 2
-        x: 141
-        y: 9
-        width: 836
-        height: 1529
+        x: 25
+        y: 1431
+        width: 6
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -143,20 +146,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4667e2820ee582220800000000000000
-      internalID: 2461321513197794916
+      spriteID: 1b7e6d60d70a35fa0800000000000000
+      internalID: -5813126235159074895
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: New Fang Walking Left After Stil_2
+      name: New Fang After Still Right_2
       rect:
         serializedVersion: 2
-        x: 1160
-        y: 1430
-        width: 9
-        height: 50
+        x: 50
+        y: 43
+        width: 1782
+        height: 2803
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -165,8 +168,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b828dbf59fa3fe910800000000000000
-      internalID: 1868777213109568139
+      spriteID: 0372736bbe28a62e0800000000000000
+      internalID: -2131747524720515280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New Fang After Still Right_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1407
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c3da94349c9e14d0800000000000000
+      internalID: -3161917728015854656
       vertices: []
       indices: 
       edges: []
@@ -175,7 +200,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -185,9 +210,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      New Fang Walking Left After Stil_0: 804653458844285517
-      New Fang Walking Left After Stil_1: 2461321513197794916
-      New Fang Walking Left After Stil_2: 1868777213109568139
+      New Fang After Still Right_0: 7123356091125123473
+      New Fang After Still Right_1: -5813126235159074895
+      New Fang After Still Right_2: -2131747524720515280
+      New Fang After Still Right_3: -3161917728015854656
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

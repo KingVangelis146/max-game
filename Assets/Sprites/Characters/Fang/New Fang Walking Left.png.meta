@@ -1,16 +1,19 @@
 fileFormatVersion: 2
-guid: 14c49f39432016c418bb16911e8aa532
+guid: cb7b7137f9eb75e459421060cfdf2de0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2133840773513342345
-    second: New Fang Left Fully Entended_0
+      213: 2786208111653833776
+    second: New Fang Walking Left_0
   - first:
-      213: 3659614416735459104
-    second: New Fang Left Fully Entended_1
+      213: 1098110859343589912
+    second: New Fang Walking Left_1
   - first:
-      213: -6917024962264240229
-    second: New Fang Left Fully Entended_2
+      213: 1248493392696044331
+    second: New Fang Walking Left_2
+  - first:
+      213: 9070538250691537474
+    second: New Fang Walking Left_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -52,7 +55,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -106,13 +109,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: New Fang Left Fully Entended_0
+      name: New Fang Walking Left_0
       rect:
         serializedVersion: 2
-        x: 640
-        y: 1542
+        x: 18
+        y: 1342
         width: 7
-        height: 6
+        height: 7
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -121,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 98de180c0ecec9d10800000000000000
-      internalID: 2133840773513342345
+      spriteID: 03c407df3899aa620800000000000000
+      internalID: 2786208111653833776
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: New Fang Left Fully Entended_1
+      name: New Fang Walking Left_1
       rect:
         serializedVersion: 2
-        x: 141
-        y: 9
-        width: 1001
-        height: 1529
+        x: 25
+        y: 1341
+        width: 6
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -143,20 +146,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0275a6c2cef89c230800000000000000
-      internalID: 3659614416735459104
+      spriteID: 8127c2f22064d3f00800000000000000
+      internalID: 1098110859343589912
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: New Fang Left Fully Entended_2
+      name: New Fang Walking Left_2
       rect:
         serializedVersion: 2
-        x: 1156
-        y: 1429
-        width: 11
-        height: 51
+        x: 50
+        y: 39
+        width: 2007
+        height: 2716
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -165,8 +168,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b9feabdd17ac100a0800000000000000
-      internalID: -6917024962264240229
+      spriteID: b2be118302a835110800000000000000
+      internalID: 1248493392696044331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New Fang Walking Left_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1317
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24aef023b7601ed70800000000000000
+      internalID: 9070538250691537474
       vertices: []
       indices: 
       edges: []
@@ -175,7 +200,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -185,9 +210,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      New Fang Left Fully Entended_0: 2133840773513342345
-      New Fang Left Fully Entended_1: 3659614416735459104
-      New Fang Left Fully Entended_2: -6917024962264240229
+      New Fang Walking Left_0: 2786208111653833776
+      New Fang Walking Left_1: 1098110859343589912
+      New Fang Walking Left_2: 1248493392696044331
+      New Fang Walking Left_3: 9070538250691537474
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

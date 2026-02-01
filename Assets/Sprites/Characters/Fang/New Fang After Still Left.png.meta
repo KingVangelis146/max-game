@@ -1,16 +1,19 @@
 fileFormatVersion: 2
-guid: 1ab39528d9b1bd2489b7909682a6423a
+guid: 7256b17b12db5f54c9acd31010b1feba
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 681154379272836558
-    second: New Fang Walking Left In Between_0
+      213: -2672150586053884965
+    second: New Fang After Still Left_0
   - first:
-      213: -2691056228764405826
-    second: New Fang Walking Left In Between_1
+      213: 1402670423086998758
+    second: New Fang After Still Left_1
   - first:
-      213: 3146012335306848775
-    second: New Fang Walking Left In Between_2
+      213: 3074379870130300170
+    second: New Fang After Still Left_2
+  - first:
+      213: -1359908119270171330
+    second: New Fang After Still Left_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -52,7 +55,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -106,12 +109,34 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: New Fang Walking Left In Between_0
+      name: New Fang After Still Left_0
       rect:
         serializedVersion: 2
-        x: 637
-        y: 1532
+        x: 18
+        y: 1432
         width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd308eb133d9aead0800000000000000
+      internalID: -2672150586053884965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: New Fang After Still Left_1
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 1431
+        width: 6
         height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -121,20 +146,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ec552cd8c42f37900800000000000000
-      internalID: 681154379272836558
+      spriteID: 6e42c017159477310800000000000000
+      internalID: 1402670423086998758
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: New Fang Walking Left In Between_1
+      name: New Fang After Still Left_2
       rect:
         serializedVersion: 2
-        x: 139
-        y: 8
-        width: 833
-        height: 1521
+        x: 50
+        y: 65
+        width: 1793
+        height: 2781
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -143,20 +168,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ebf25e52e9277aad0800000000000000
-      internalID: -2691056228764405826
+      spriteID: a056abff3346aaa20800000000000000
+      internalID: 3074379870130300170
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: New Fang Walking Left In Between_2
+      name: New Fang After Still Left_3
       rect:
         serializedVersion: 2
-        x: 1154
-        y: 1423
-        width: 10
-        height: 49
+        x: 0
+        y: 1407
+        width: 7
+        height: 9
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -165,8 +190,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 70a36f8fc81e8ab20800000000000000
-      internalID: 3146012335306848775
+      spriteID: e3d5bb745c2a02de0800000000000000
+      internalID: -1359908119270171330
       vertices: []
       indices: 
       edges: []
@@ -175,7 +200,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -185,9 +210,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      New Fang Walking Left In Between_0: 681154379272836558
-      New Fang Walking Left In Between_1: -2691056228764405826
-      New Fang Walking Left In Between_2: 3146012335306848775
+      New Fang After Still Left_0: -2672150586053884965
+      New Fang After Still Left_1: 1402670423086998758
+      New Fang After Still Left_2: 3074379870130300170
+      New Fang After Still Left_3: -1359908119270171330
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
