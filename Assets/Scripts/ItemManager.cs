@@ -18,7 +18,7 @@ public class ItemController : MonoBehaviour
 
     static public void Activate(type item, GameObject player)
     {
-         PlayerManager play = player.GetComponent<PlayerManager>();
+         Playercontroller play = player.GetComponent<Playercontroller>();
         switch (item)
         {
             case type.None:

@@ -5,18 +5,13 @@ using UnityEngine;
 using UnityEngine.Tilemaps;
 
 [RequireComponent(typeof(Rigidbody2D))]
-public class PlayerManager : MonoBehaviour
+public class Playercontroller : MonoBehaviour
 {
     [Header("General Stats")]
     public int health = 10;
     public int maxHealth = 10;
     public int mana = 10;
     public int maxMana = 10;
-
-    [Header("Layers")]
-    public LayerMask[] collisionLayers;
-    public LayerMask enemyLayer;
-    public LayerMask playerLayer;
 
     [Header("Movement")]
     public float moveSpeed = 8f;
@@ -34,6 +29,7 @@ public class PlayerManager : MonoBehaviour
     public Transform wallCheckLeft;
     public Transform wallCheckRight;
     public float checkRadius = 0.2f;
+    public LayerMask[] collisionLayers;
     public float wallSlideSpeed = 2f;
     public float wallJumpForceX = 10f;
     public float wallJumpForceY = 14f;
@@ -51,22 +47,9 @@ public class PlayerManager : MonoBehaviour
     public Transform spriteChild;
     public Animator childAnimator;
     public SpriteRenderer childSpriteRenderer;
-    public Color flashColor = Color.white;
-    public float flashDuration = 0.15f;
-    public float invincibleTime = 3f;
-    private Color originalColor;
-    public bool isInvincible = false;
 
     [Header("Game Objects")]
     public GameObject player;
-
-    [Header("Attack")]
-    public Transform attackPoint;
-    public float attackRadius = 0.5f;
-    public float attackCooldown = 0.3f;
-    public float knockbackForce = 6f;
-    public int attackDamage = 1;
-    float nextAttackTime = 0f;
 
     // --- Private ---
     private Rigidbody2D rb;
@@ -117,20 +100,8 @@ public class PlayerManager : MonoBehaviour
         tileActions = new Dictionary<TileBase, Action>();
         foreach (TileBase thorn in thornsTiles)
         {
-            tileActions[thorn] = () => TakeDamage(1);
+            tileActions[thorn] = () => EditHealth(1, false);
         }
-
-        if (spriteRenderer == null)
-            spriteRenderer = GetComponentInChildren<SpriteRenderer>();
-
-        if (spriteRenderer != null)
-            originalColor = spriteRenderer.color;
-
-        enemyLayer = LayerMask.NameToLayer("Enemy");
-        playerLayer = LayerMask.NameToLayer("Player");
-
-        // Initialize UI bar
-        UIManager.Instance.SetHealth(health);
     }
 
     void Update()
@@ -138,44 +109,6 @@ public class PlayerManager : MonoBehaviour
         MovementController();
         UpdateAnimationStates();
         DetectTile();
-
-        bool attackPressed = Input.GetKeyDown(KeyCode.G) ||
-                             Input.GetButtonDown("Fire1");
-
-        if (attackPressed && Time.time >= nextAttackTime)
-        {
-            Attack();
-            nextAttackTime = Time.time + attackCooldown;
-        }
-    }
-
-    void Attack()
-    {
-        Collider2D[] hits = Physics2D.OverlapCircleAll(
-            attackPoint.position,
-            attackRadius,
-            enemyLayer
-        );
-
-        foreach (Collider2D hit in hits)
-        {
-            Enemy enemy = hit.GetComponentInParent<Enemy>();
-
-            if (enemy != null)
-            {
-                // Knockback
-                Vector2 knockDir = (enemy.transform.position - transform.position).normalized;
-                enemy.ApplyKnockback(knockDir * knockbackForce);
-                enemy.TakeDamage(1);
-            }
-        }
-    }
-
-    void OnDrawGizmosSelected()
-    {
-        if (attackPoint == null) return;
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(attackPoint.position, attackRadius);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -201,7 +134,7 @@ public class PlayerManager : MonoBehaviour
     /// </summary>
     /// <returns>Returns True if there's ground</returns>
     bool DetectGround()
-    {
+    {        
         bool grounded = false;
         foreach (LayerMask layer in collisionLayers)
         {
@@ -270,7 +203,7 @@ public class PlayerManager : MonoBehaviour
         }
 
         WallCheck();
-
+        
 
         // --- Jump Buffer ---
         if (jumpPressed) jumpBufferCounter = jumpBufferTime;
@@ -341,7 +274,7 @@ public class PlayerManager : MonoBehaviour
     /// If the player is on a platform and presses jump holding down, then fall through the platform
     /// </summary>
     void DropThruPlatform()
-    {
+    {        
         Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Platforms"), true);
         hasJumped = true;
         StartCoroutine(WaitAndDo(0.5f, () =>
@@ -405,53 +338,6 @@ public class PlayerManager : MonoBehaviour
             hasJumped = true;
             coyoteTimeCounter = 0f;
             jumpBufferCounter = 0f;
-        }
-    }
-
-    public void FlashNow()
-    {
-        if (!isInvincible)
-            StartCoroutine(InvincibleCoroutine());
-    }
-
-    private IEnumerator InvincibleCoroutine()
-    {
-        isInvincible = true;
-
-        // Disable collision between player ↔ enemy
-        Physics2D.IgnoreLayerCollision(playerLayer, enemyLayer, true);
-
-        float endTime = Time.time + invincibleTime;
-
-        // Flash during invincible state
-        while (Time.time < endTime)
-        {
-            spriteRenderer.color = flashColor;
-            yield return new WaitForSeconds(flashDuration);
-
-            spriteRenderer.color = originalColor;
-            yield return new WaitForSeconds(flashDuration);
-        }
-
-        // Restore normal state
-        spriteRenderer.color = originalColor;
-        Physics2D.IgnoreLayerCollision(this.player.layer, enemyLayer, false);
-
-        isInvincible = false;
-    }
-
-    public void TakeDamage(int amount)
-    {
-        if (isInvincible) return;
-
-        EditHealth(amount, false);
-
-        FlashNow();
-
-        if (health <= 0)
-        {
-            Debug.Log("Player Died!");
-            // TODO: Respawn or Game Over Screen
         }
     }
 }

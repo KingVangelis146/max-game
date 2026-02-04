@@ -52,11 +52,16 @@ public class Enemy : MonoBehaviour
         rb.AddForce(force, ForceMode2D.Impulse);
     }
 
+    private void Die()
+    {
+        Destroy(gameObject);
+    }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (!other.CompareTag(playerTag)) return;
 
-        PlayerManager pf = other.GetComponentInParent<PlayerManager>();
+        PlayerFlash pf = other.GetComponentInParent<PlayerFlash>();
         if (pf != null)
             TryDamage(pf);
     }
@@ -65,12 +70,12 @@ public class Enemy : MonoBehaviour
     {
         if (!other.CompareTag(playerTag)) return;
 
-        PlayerManager pf = other.GetComponentInParent<PlayerManager>();
+        PlayerFlash pf = other.GetComponentInParent<PlayerFlash>();
         if (pf != null)
             TryDamage(pf);
     }
 
-    void TryDamage(PlayerManager pf)
+    void TryDamage(PlayerFlash pf)
     {
         if (pf.isInvincible)
             return;
@@ -80,19 +85,5 @@ public class Enemy : MonoBehaviour
             pf.TakeDamage(contactDamage);
             nextAttackTime = Time.time + attackCooldown;
         }
-    }
-
-    public void TakeDamage(int dmg)
-    {
-        currentHealth -= dmg;
-
-        if (currentHealth <= 0)
-            Die();
-    }
-
-    void Die()
-    {
-        // play animation later
-        Destroy(gameObject);
     }
 }
